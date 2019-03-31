@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <button onclick="lol()">CLick</button> 
+
+
+
+    
+        
+        <input type="text" placeholder="Show me a..." id="yourgif">
+    <button id="submit">Search</button>
+
+    <script id="gif-template" type="text/x-handlebars-template">
+
+        {{#each urls}}
+        <div class="frame">
+            <iframe src="{{this}}"></iframe>
+        </div>
+        <div class="button">
+            <button data-id="{{this}}"class="add">Add</button>
+        </div>
+        {{/each}}
+
+    </script>
+
+    <div class="gif"></div>
+
+
+
+    <h1>Favorite GIFS</h1>
+    
+    <script id="favorite-template" type="text/x-handlebars-template">
+    
+    </script>
+    
+    <div class="favorite-gifs"></div> -->
+
+    <script src="AJAX.js"></script>
+</body>
+
+</html>
